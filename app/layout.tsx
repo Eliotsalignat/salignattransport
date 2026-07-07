@@ -13,42 +13,56 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://salignattransport.fr"),
+
   title: "Salignat Transport | Transport régional, national et urgent",
   description:
-    "Salignat Transport assure vos transports dédiés, régionaux, nationaux et urgents en moins de 3,5 tonnes. Réponse sous 24h maximum.",
+    "Salignat Transport assure vos transports de marchandises en véhicule léger moins de 3,5 tonnes. Transport régional, national et urgent avec interlocuteur unique au départ de Villefranche-sur-Saône.",
+
   keywords: [
     "Salignat Transport",
     "transport urgent",
     "transport régional",
     "transport national",
+    "transport Villefranche-sur-Saône",
     "transport Lyon",
     "transport Rhône-Alpes",
     "transport Auvergne",
     "transport moins de 3,5 tonnes",
-    "livraison express",
     "transport dédié",
+    "livraison express",
   ],
+
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
+
   openGraph: {
     title: "Salignat Transport",
     description:
-      "On transporte votre confiance. Transport régional, national et urgent avec réponse sous 24h maximum.",
+      "On transporte votre confiance. Transport régional, national et urgent. Réponse sous 24h maximum.",
     url: "https://salignattransport.fr",
     siteName: "Salignat Transport",
     images: [
       {
-        url: "/logo.svg",
-        width: 1200,
-        height: 630,
-        alt: "Salignat Transport",
+        url: "/favicon.png",
+        width: 512,
+        height: 512,
+        alt: "Logo Salignat Transport",
       },
     ],
     locale: "fr_FR",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary",
+    title: "Salignat Transport",
+    description:
+      "Transport régional, national et urgent. Réponse sous 24h maximum.",
+    images: ["/favicon.png"],
   },
 };
 
